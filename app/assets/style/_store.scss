@@ -1,0 +1,121 @@
+@import "_reset.scss";
+@import "_base.scss";
+@import "_utilities.scss";
+@import "_layout.scss";
+
+.wrap {
+  max-width: $containerW + 20px;
+  margin: 96px auto 160px auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  @include pad {
+    max-width: 710px;
+    margin: 60px auto 96px auto;
+  }
+  @include phone {
+    max-width: 365px;
+    margin: 28px auto 56px auto;
+  }
+}
+
+.select {
+  margin-bottom: 32px;
+  @include pad {
+    margin-bottom: 24px;
+  }
+  @include phone {
+    display: flex;
+    align-items: center;
+  }
+  label {
+    margin-right: 22px;
+    @include pad {
+      margin-right: 20px;
+    }
+    @include phone {
+      margin-right: 12px;
+    }
+  }
+  select {
+    color: #495057;
+    padding: 8px 179px 11px 19px;
+    border: 1px solid #ced4da;
+    @include pad {
+      padding: 12px 109px 12px 16px;
+    }
+    @include phone {
+      padding: 7px 16px 9px 16px;
+      flex-grow: 1;
+    }
+  }
+}
+.location {
+  display: flex;
+  @include pad {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    max-width: 445px;
+    margin-right: 32px;
+    flex-grow: 1;
+    @include pad {
+      max-width: 690px;
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+    @include phone {
+      flex-wrap: wrap;
+    }
+  }
+
+  .pic {
+    height: 224px;
+    @include pad {
+      margin-right: 30px;
+      height: 164px;
+      max-width: 330px;
+    }
+    @include phone {
+      margin-right: 0;
+      max-width: 345px;
+    }
+  }
+
+  @include pad {
+    .text {
+      flex-grow: 1;
+    }
+  }
+  .name {
+    border: 1px solid #00000020;
+    padding: 12px 24px;
+  }
+  .info {
+    border: 1px solid #00000020;
+    padding: 16px 24px;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      @include pad {
+        .ch-lg-r {
+          @include ch-font(1.75, 400);
+        }
+      }
+    }
+  }
+  .map {
+    flex-grow: 1;
+    @include pad {
+      height: 422px;
+    }
+  }
+}
