@@ -1,10 +1,27 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>首頁</title>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="navigation">
+        <li class="ch-lg"><a href="">系列鏡框</a></li>
+        <li class="ch-lg"><a href="/store.html">門市據點</a></li>
+        <li class="ch-lg"><a href="">部落格</a></li>
+        <li class="ch-lg"><a href="">常見問題</a></li>
+      </ul>
+    </div>
+
+    
 <div class="header">
   <div class="title">
     <h3>Promise-Desert 2020 早春系列</h3>
@@ -192,3 +209,62 @@ current: index
     </form>
   </div>
 </div>
+
+
+    <div class="footer">
+      <div class="wrap">
+        <div class="top-nav">
+          <div class="left">
+            <ul class="navigation">
+              <li><a href="">首頁</a></li>
+              <li><a href="">系列鏡框</a></li>
+              <li><a href="">門市據點</a></li>
+              <li><a href="">部落格</a></li>
+              <li><a href="">常見問題</a></li>
+            </ul>
+            <ul class="contact-info">
+              <li>
+                <img
+                  src="assets/images/icon-phone.svg"
+                  alt="電話"
+                  class="icon"
+                />
+                <p class="en-md">0800-000-000</p>
+              </li>
+              <li>
+                <img
+                  src="assets/images/icon-mail.svg"
+                  alt="電子郵件"
+                  class="icon"
+                />
+                <p class="en-md">glasses@business.com</p>
+              </li>
+            </ul>
+          </div>
+          <ul class="social-media">
+            <li>
+              <a href="#"><img src="assets/images/icon-fb.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/images/icon-ig.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/images/icon-line.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="other-info">
+          <p class="copyright en-sm">
+            Copyright © 2020 Glasses.All rights reserved.
+          </p>
+          <ul class="other-link">
+            <li><a class="ch-sm-r" href="#">隱私權政策</a></li>
+            <li><a class="ch-sm-r" href="#">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
