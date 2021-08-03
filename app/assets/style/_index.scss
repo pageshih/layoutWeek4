@@ -19,7 +19,7 @@ h2 {
 
 .header {
   @include pd-rl-1;
-  background-image: url("/assets/images/banner.png");
+  background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   height: 840px;
   display: flex;
@@ -188,7 +188,7 @@ h2 {
 }
 
 .product-brand {
-  background-image: url("/assets/images/bg.png");
+  background-image: url("../images/bg.png");
   @include phone {
     padding-bottom: 25px;
   }
