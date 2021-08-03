@@ -30,10 +30,11 @@ h2 {
     text-align: right;
     margin-left: 20%;
     @include phone {
-      margin-left: 9%;
+      margin-left: 2%;
     }
   }
   @include pad {
+    background-image: url("../images/banner-sm.png");
     background-position: 40% 0;
   }
   @include phone {
