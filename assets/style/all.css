@@ -529,7 +529,7 @@ h2 {
 .header {
   padding-right: 10px;
   padding-left: 10px;
-  background-image: url("/assets/images/banner.png");
+  background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   height: 840px;
   display: -webkit-box;
@@ -724,7 +724,7 @@ h2 {
                   justify-content: center; } }
 
 .product-brand {
-  background-image: url("/assets/images/bg.png"); }
+  background-image: url("../images/bg.png"); }
   @media (max-width: 576px) {
     .product-brand {
       padding-bottom: 25px; } }
